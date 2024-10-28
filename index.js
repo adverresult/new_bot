@@ -2,7 +2,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const axios = require('axios');
 
 const tokenBot = '7669255606:AAGPXEBWpbIbKw6ARdcnS1GLpRHUcPfRJL0';
-const openaiApiKey = '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';
+const openaiApiKey = 'sk-CyW1m19ZqhQ_9kasXpJrbc7mhqOnkilyuuQVX7BLRFT3BlbkFJAXfQm0bZJlaPdT71XYL4jHR81G_4mnImezB9ch6XEA';
 
 
 const bot = new TelegramBot(tokenBot, { polling: true });
