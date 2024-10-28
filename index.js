@@ -1,7 +1,7 @@
 const TelegramBot = require('node-telegram-bot-api');
 const axios = require('axios');
 
-const tokenBot = '8162816362:AAGUnKpLZAwTiwS1RCitruCkZFWRR93C5BM';
+const tokenBot = '7669255606:AAGPXEBWpbIbKw6ARdcnS1GLpRHUcPfRJL0';
 const openaiApiKey = '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';
 
 
