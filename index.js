@@ -1,8 +1,11 @@
-require('dotenv').config();
 const TelegramBot = require('node-telegram-bot-api');
 const axios = require('axios');
 
-const bot = new TelegramBot(process.env.TELEGRAM_TOKEN, { polling: true });
+const tokenBot = '7669255606:AAGPXEBWpbIbKw6ARdcnS1GLpRHUcPfRJL0';
+const openaiApiKey = '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';
+
+
+const bot = new TelegramBot(tokenBot, { polling: true });
 let userRequestData = {}; // Хранение данных пользователя
 
 // Функция для показа главного меню с кнопками
@@ -50,7 +53,7 @@ const generateImages = async (chatId, imageTheme, imageCount) => {
       },
       {
         headers: {
-          Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+          Authorization: `Bearer ${openaiApiKey}`,
           'Content-Type': 'application/json',
         },
       }
@@ -76,7 +79,7 @@ const generateText = async (chatId, postText) => {
       },
       {
         headers: {
-          Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+          Authorization: `Bearer ${openaiApiKey}`,
           'Content-Type': 'application/json',
         },
       }
