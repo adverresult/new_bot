@@ -4,7 +4,7 @@ module.exports = {
       script: "./index.js",        // Путь к вашему индексному файлу
       env: {
         NODE_ENV: "production",     // Переменная окружения для режима
-        API_KEY: "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",      // Ваш API токен
+        API_KEY: "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",      // Ваш API токен
       },
       // Дополнительные опции
       instances: "max",            // Использовать все доступные CPU
